@@ -78,3 +78,25 @@ attendance_map = {0: '야간', 1: '주간'}
 scholarship_holder_map = {0: '미수혜', 1: '수혜'}
 
 target_map = {'Dropout': '자퇴', 'Graduate': '졸업'}
+
+# 결과 페이지에서 학생 정보를 표시할 때 사용할 레이블 매핑
+def get_feature_details_for_display():
+    return {
+        'Marital status': {"label": "결혼 상태"},
+        'Course': {"label": "수강 과정"},
+        'Daytime/evening attendance': {"label": "주/야간 수업"},
+        'Previous qualification': {"label": "이전 학력"},
+        "Mother's occupation": {"label": "어머니 직업"},
+        "Father's occupation": {"label": "아버지 직업"},
+        'Displaced': {"label": "이재민 여부"},
+        'Educational special needs': {"label": "특수 교육 필요"},
+        'Debtor': {"label": "학자금 연체"},
+        'Tuition fees up to date': {"label": "등록금 납부"},
+        'Gender': {"label": "성별"},
+        'Scholarship holder': {"label": "장학금 수혜"},
+        'Age': {"label": "입학 시 나이"},
+        'Curricular units 1st sem (approved)': {"label": "1학기 이수 학점"},
+        'Curricular units 1st sem (grade)': {"label": "1학기 평균 성적"},
+        'Curricular units 2nd sem (approved)': {"label": "2학기 이수 학점"},
+        'Curricular units 2nd sem (grade)': {"label": "2학기 평균 성적"}
+    }
